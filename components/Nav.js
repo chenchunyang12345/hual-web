@@ -17,7 +17,11 @@ const Nav = () => {
         <header>
             <div className="inner">
                 <div className="wrap">
-                    <h1>华来知识logo图</h1>
+                    <div className="logo">
+                        <h1>
+                            <a href="#">华来知识</a>
+                        </h1>
+                    </div>
                     <nav>
                         <ul>
                             {
@@ -36,17 +40,38 @@ const Nav = () => {
             {/* 样式 */}
             <style jsx>{`
                 header {
-                    width: 100vw;
+                    width: 100%;
                     height: 60px;
                     background-color: #000;
                     color: #fff;
                     display: flex;
+                    position: fixed;
+                    left: 0;
+                    top: 0;
+                    z-index: 999;
                 }
                 .wrap {
                     display: flex;
                     justify-content: space-between;
+                    align-items: center;
+                    padding-left: 8px;
                 }
-                h1 {
+                .logo {
+                    width: 91px;
+                    height: 25px;
+                }
+                .logo h1 {
+                    width: 100%;
+                    height: 100%;
+                }
+                .logo h1 a {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    background-image: url('/static/hual-logo.png');
+                    background-size: 100% 100%;
+                    text-indent: -999em;
+                    overflow: hidden;
                 }
                 nav ul {
                     display: flex;
@@ -55,6 +80,9 @@ const Nav = () => {
                 nav ul li {
                     font-size: 14px;
                     margin-right: 76px;
+                }
+                nav ul li:nth-last-child(1) {
+                    margin-right: 0;
                 }
                 nav ul li a {
                     display: block;
