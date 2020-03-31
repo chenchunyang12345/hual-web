@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Layout from "../layout/layout";
 import TeamCard from "../components/TeamCard";
 import JoinCard from "../components/JoinCard";
+import Partner from '../components/Partner';
 
 /* 关于我们 */
 class About extends Component {
@@ -296,7 +297,10 @@ class About extends Component {
               </div>
             </div>
           </div>
-          <p className="title3 public_title1">我们合作的客户</p>
+          <div className="inner">
+            <h4>我们合作的客户</h4>
+            <Partner />
+          </div>
           <p className="title3 public_title1">加入我们</p>
           <div className="card_join">
             <JoinCard
@@ -304,17 +308,19 @@ class About extends Component {
               portrait="/static/boss@2x.png"
               text2="华来BOSS直聘招聘主页"
               buttonName="进入平台"
+              url="/"
             />
             <JoinCard
               text1="拉钩"
               portrait="/static/lagou@2x.png"
               text2="华来拉勾招聘主页"
               buttonName="进入平台"
+              url="https://www.lagou.com/gongsi/478108.html"
             />
           </div>
           <p className="title3 public_title1">联系我们，了解更多详细信息</p>
           <div className="contact_button">
-            <p>联系我们</p>
+            <a href="Mailto:business@hual.ai">联系我们</a>
           </div>
         </div>
         <style jsx>{`
@@ -324,12 +330,11 @@ class About extends Component {
           }
           .banner {
             width: 100vw;
-            height: 590rem;
+            height: 650rem;
             background: url("/static/banner@2x.png") no-repeat;
             background-size: 100% 100%;
             overflow: hidden;
           }
-
           .title1 {
             width: 104px;
             height: 37px;
@@ -340,7 +345,7 @@ class About extends Component {
             line-height: 37px;
             margin-left: 50%;
             transform: translateX(-50%);
-            margin-top: 200rem;
+            margin-top: 260rem;
           }
           .title2 {
             width: 918px;
@@ -514,10 +519,15 @@ class About extends Component {
             font-size: 16px;
             font-family: PingFang-SC-Regular, PingFang-SC;
             font-weight: 400;
-            color: rgba(57, 120, 252, 1);
             line-height: 42px;
             text-align: center;
             cursor: pointer;
+          }
+          .contact_button a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            color: rgba(57, 120, 252, 1);
           }
           .public_title1 {
             width: 100%;

@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 class JoinCard extends Component {
   render() {
     return (
@@ -12,7 +12,9 @@ class JoinCard extends Component {
             <p>{this.props.text2}</p>
           </div>
           <div className="button_into">
-            <p>{this.props.buttonName}</p>
+            <a href={this.props.url} target="_blank">
+              {this.props.buttonName}
+            </a>
           </div>
         </div>
         <style jsx>{`
@@ -75,7 +77,15 @@ class JoinCard extends Component {
           }
           .button_into:hover {
             background: rgba(85, 132, 255, 1);
+          }
+          .button_into:hover a {
             color: rgba(255, 255, 255, 1);
+          }
+          .button_into a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            color: rgba(57, 120, 252, 1);
           }
         `}</style>
       </div>
