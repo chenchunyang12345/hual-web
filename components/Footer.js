@@ -2,7 +2,7 @@ const Footer = () => (
   <footer>
     <div className="inner">
       <div className="introduce">
-        <div className="logo">logo</div>
+        <div className="logo"></div>
         <p className="introduce_text">
           行业领先的AI语音语音技术服务提供商。
           <br />
@@ -64,10 +64,12 @@ const Footer = () => (
         width: 360px;
       }
       .logo {
-        width: 121px;
-        height: 39px;
-        margin-top: 49px;
-        background-color: yellow;
+        width: 91px;
+        height: 25px;
+        margin-top: 63px;
+        margin-left: 9px;
+        background-image: url('/static/hual-logo.png');
+        background-size: 100% 100%;
       }
       .introduce_text {
         width: 100%;
@@ -83,7 +85,7 @@ const Footer = () => (
         width: 160px;
         margin-left: 80px;
       }
-      .core{
+      .core {
         margin-left: 132px;
       }
       .headline {

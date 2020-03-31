@@ -116,12 +116,11 @@ class Product extends Component {
           }
           .jishu {
             width: 100vw;
-            height: 590rem;
+            height: 650rem;
             background: url("/static/jishu@2x.png") no-repeat;
             background-size: 100% 100%;
             overflow: hidden;
           }
-
           .title1 {
             width: 163px;
             height: 52px;
@@ -132,7 +131,7 @@ class Product extends Component {
             line-height: 56px;
             margin-left: 50%;
             transform: translateX(-50%);
-            margin-top: 173rem;
+            margin-top: 233rem;
           }
           .title2 {
             width: 130px;
@@ -213,7 +212,7 @@ class Product extends Component {
           .second_img {
             width: 880rem;
             height: 380rem;
-            background: url("/static/sales-manager-giving-advice-his-260nw-529008256@2x.png")
+            background: url("/static/happy-senior-old-family-couple-260nw-1437231725@2x.png")
               no-repeat;
             background-size: 100% 100%;
             float: left;

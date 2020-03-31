@@ -1,8 +1,8 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 class TeamCard extends Component {
   /* 换行 中间加"@$" */
   renderBr = text => {
-    let result = text.split("@$");
+    let result = text.split('@$');
     if (result) {
       return (
         <>
