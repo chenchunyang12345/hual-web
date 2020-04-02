@@ -1,18 +1,19 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+const isProd = process.env.NODE_ENV === 'production'; // 是否是生产环境
 
 const HOVER_LINE = 3; // 底部线的宽度
 const NAV_ARR = [
-  // 导航
   { path: '/', name: '首页' },
   { path: '/technology', name: '核心与技术' },
-  { path: '/product', name: '服务和产品' },
+  { path: '/product', name: '产品与服务' },
   { path: '/about', name: '关于我们' }
 ];
 
 const Nav = () => {
   const router = useRouter();
   let { pathname } = router;
+  const indexUrl = isProd ? './index.html' : '/';
 
   return (
     <header>
@@ -20,20 +21,25 @@ const Nav = () => {
         <div className="wrap">
           <div className="logo">
             <h1>
-              <a href="#">华来知识</a>
+              <Link href={indexUrl}>
+                  <a>华来知识</a>
+              </Link>
             </h1>
           </div>
           <nav>
             <ul>
-              {NAV_ARR.map((item, idx) => (
-                <li key={idx}>
-                  <Link href={item.path}>
-                    <a className={item.path === pathname ? 'hover' : ''}>
-                      {item.name}
-                    </a>
-                  </Link>
-                </li>
-              ))}
+              {NAV_ARR.map((item, idx) => {
+                const url = isProd ? `.${item.path === '/' ? item.path + 'index' : item.path}.html` : item.path;
+                return (
+                  <li key={idx}>
+                    <Link href={url}>
+                      <a className={item.path === pathname ? 'hover' : ''}>
+                        {item.name}
+                      </a>
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
           </nav>
         </div>
@@ -69,7 +75,7 @@ const Nav = () => {
           display: block;
           width: 100%;
           height: 100%;
-          background-image: url('/static/hual-logo.png');
+          background-image: url('./static/hual-logo.png');
           background-size: 100% 100%;
           text-indent: -999em;
           overflow: hidden;

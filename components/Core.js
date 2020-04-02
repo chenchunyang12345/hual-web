@@ -6,13 +6,13 @@ const DESC = ['智能语音', '企业知识图谱构建', '智能对话平台'];
 const CardItem = ({ content, idx }) => (
   <div className="cardItem card-hover">
     <img
-      src={`/static/core-bg${idx}.png`}
+      src={`./static/core-bg${idx}.png`}
       className={`bg${idx}`}
       alt="技术logo"
     />
     <p>{content}</p>
-    <Link href="#">
-      <a className="link" target="_blank">
+    <Link href={`${process.env.path.nav2}#t${idx}`}>
+      <a className="link">
         查看更多
       </a>
     </Link>

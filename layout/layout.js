@@ -30,6 +30,14 @@ const Layout = ({ children, title = '华来知识' }) => {
         .card-hover:hover {
           box-shadow: 0px 4px 32px -4px rgba(0, 120, 226, 0.4) !important;
         }
+        // 防止锚点出现在fixed导航之下（暗锚）
+        .anchor {
+          position: relative;
+          top: -60px;
+          display: block;
+          height: 0;
+          overflow: hidden;
+        }
       `}</style>
     </div>
   );

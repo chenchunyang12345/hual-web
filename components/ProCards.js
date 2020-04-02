@@ -7,15 +7,15 @@ const CONTENT = [
   },
   {
     title: '保险行业知识化解决方案',
-    desc: '模拟保险销售真实工作场景\n实现从入门到职业能力全面掌握'
+    desc: '为保险行业提供知识化智能化辅助\n降低从业门槛，提高成单率'
   },
   {
     title: 'ai客服服务方案',
-    desc: '模拟保险销售真实工作场景\n实现从入门到职业能力全面掌握'
+    desc: '快速响应，高效率，7*24小时在线\n多渠道智能客服'
   },
   {
     title: 'EHR',
-    desc: '模拟保险销售真实工作场景\n实现从入门到职业能力全面掌握'
+    desc: '智能化人力知识管理和服务\n提高人力资源管理效率\n高效员工问题解答'
   }
 ];
 // 单个卡片
@@ -28,8 +28,8 @@ const Card = ({ content, idx }) => (
       <div className="hover-bg">
         <p className="title-hide">{content.title}</p>
         <p className="desc-hide">{content.desc}</p>
-        <Link href="#">
-          <a className="link" target="_blank">
+        <Link href={`${process.env.path.nav3}#p${idx}`}>
+          <a className="link">
             了解更多
           </a>
         </Link>
@@ -50,7 +50,7 @@ const Card = ({ content, idx }) => (
       }
       // 图片
       .bg${idx} {
-        background-image: url('/static/pro-bg${idx}.png');
+        background-image: url('./static/pro-bg${idx}.png');
         background-size: 100% 100%;
       }
       .card:nth-last-child(1) {
@@ -94,7 +94,6 @@ const Card = ({ content, idx }) => (
         padding-bottom: 12px;
       }
       .desc-hide {
-        width: 196px;
         text-align: center;
         margin: 0 auto;
         font-size: 14px;

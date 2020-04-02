@@ -1,6 +1,6 @@
-import React, { Component } from "react";
-import Layout from "../layout/layout";
-import "./";
+import React, { Component } from 'react';
+import Layout from '../layout/layout';
+// import './';
 /* 产品与服务 */
 
 class Product extends Component {
@@ -9,24 +9,25 @@ class Product extends Component {
     function computeFont() {
       // fontsize=视口Width/设计稿Width
       document.documentElement.style.fontSize =
-        document.documentElement.clientWidth / designWidth + "px";
+      document.documentElement.clientWidth / designWidth + 'px';
     }
     computeFont();
     // 视口大小发生变化时重新计算fontSize
-    window.addEventListener("resize", computeFont);
+    window.addEventListener('resize', computeFont);
     // 屏幕朝向发生变化时重新计算fontSize
-    window.addEventListener("orientationchange", computeFont);
+    window.addEventListener('orientationchange', computeFont);
   }
 
   render() {
     return (
-      <Layout>
+      <Layout title="华来知识 - 产品与服务">
         <div className="main">
           <div className="jishu">
             <p className="title1">华来科技</p>
             <p className="title2">产品与服务</p>
           </div>
           <div className="container">
+            <div className="anchor" id="p1"></div>
             <div className="box_first">
               <div className="float_left">
                 <div className="title1_content">
@@ -47,7 +48,7 @@ class Product extends Component {
               </div>
               <div className="first_img"></div>
             </div>
-
+            <div className="anchor" id="p2"></div>
             <div className="box_second">
               <div className="second_img"></div>
               <div className="float_right">
@@ -69,6 +70,7 @@ class Product extends Component {
                 </p>
               </div>
             </div>
+            <div className="anchor" id="p3"></div>
             <div className="box_second">
               <div className="float_left">
                 <div className="title1_content margin_top1">
@@ -89,7 +91,7 @@ class Product extends Component {
               </div>
               <div className="third_img"></div>
             </div>
-
+            <div className="anchor" id="p4"></div>
             <div className="box_second">
               <div className="fourth_img"></div>
               <div className="float_right margin_top2">
@@ -116,22 +118,22 @@ class Product extends Component {
           }
           .jishu {
             width: 100vw;
-            height: 650rem;
-            background: url("/static/jishu@2x.png") no-repeat;
-            background-size: 100% 100%;
+            height: 650px;
+            background-image: url('./static/jishu-bg.png');
+            background-position: center center;
             overflow: hidden;
           }
           .title1 {
             width: 163px;
             height: 52px;
             font-size: 40px;
-            font-family: PingFangSC-Medium, PingFang SC;
+            font-family: PingFang-SC-Medium, PingFang SC;
             font-weight: 500;
             color: rgba(255, 255, 255, 1);
             line-height: 56px;
             margin-left: 50%;
             transform: translateX(-50%);
-            margin-top: 233rem;
+            margin-top: 233px;
           }
           .title2 {
             width: 130px;
@@ -143,9 +145,8 @@ class Product extends Component {
             line-height: 37px;
             margin-left: 50%;
             transform: translateX(-50%);
-            margin-top: 16rem;
+            margin-top: 18px;
           }
-
           .box_first {
             overflow: hidden;
             padding-top: 50rem;
@@ -156,11 +157,9 @@ class Product extends Component {
             padding-top: 40rem;
             width: 100%;
           }
-
           .float_left {
             float: left;
           }
-
           .title1_content {
             display: flex;
             width: 100px;
@@ -180,31 +179,26 @@ class Product extends Component {
             width: 550rem;
             margin: 10rem 0 0 397rem;
           }
-
           .text2_content {
             width: 550rem;
             margin: 10rem 0 0 0;
           }
-
           .title2_content {
             margin: 20rem 0 0 397rem;
           }
-
           .title3_content {
             display: flex;
             flex-wrap: nowrap;
             width: 100px;
             align-items: center;
           }
-
           .title4_content {
             margin: 20rem 0 0 0;
           }
-
           .first_img {
             width: 880rem;
             height: 380rem;
-            background: url("/static/sales-manager-giving-advice-his-260nw-529008256@2x.png")
+            background: url('./static/sales-manager-giving-advice-his-260nw-529008256.png')
               no-repeat;
             background-size: 100% 100%;
             float: right;
@@ -212,7 +206,7 @@ class Product extends Component {
           .second_img {
             width: 880rem;
             height: 380rem;
-            background: url("/static/happy-senior-old-family-couple-260nw-1437231725@2x.png")
+            background: url('./static/happy-senior-old-family-couple-260nw-1437231725.png')
               no-repeat;
             background-size: 100% 100%;
             float: left;
@@ -220,32 +214,29 @@ class Product extends Component {
           .third_img {
             width: 880rem;
             height: 380rem;
-            background: url("/static/bigbigwork@2x.png") no-repeat;
+            background: url('./static/bigbigwork.png') no-repeat;
             background-size: 100% 100%;
             float: right;
           }
           .fourth_img {
             width: 880rem;
             height: 380rem;
-            background: url("/static/a-man-discussing-a-business-plan-3773837@2x.png")
+            background: url('./static/a-man-discussing-a-business-plan-3773837.png')
               no-repeat;
             background-size: 100% 100%;
             float: left;
           }
-
           .float_right {
             width: 550rem;
             float: right;
             margin: 32rem 330rem 0 0;
           }
-
           .margin_top1 {
             margin-top: 10rem;
           }
           margin_top2 {
             margin-top: ;
           }
-
           .public_title1 {
             height: 56rem;
             font-size: 40px;

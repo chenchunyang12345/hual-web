@@ -35,7 +35,7 @@ const CONTENT = [
 const Card = ({ content, idx }) => (
   <div className="card card-hover">
     <img
-      src={`/static/ability-img${idx}.png`}
+      src={`./static/ability-img${idx}.png`}
       className={`bg${idx}`}
       alt="能力图标"
     />

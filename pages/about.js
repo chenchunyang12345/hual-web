@@ -13,40 +13,40 @@ class About extends Component {
         professor: "清华计算机系教授 博导",
         position:
           "智能技术与系统国家重点实验室 主任@$北京市计算机学会 副理事长",
-        portrait: "/static/portrait1@2x.png"
+        portrait: "./static/portrait1@2x.png"
       },
       {
         name: "戴海生",
         professor: "清华大学 本硕博",
         position:
           "前IBM、联想、百度、京东 语音算法科学家@$百度联通智能客服系统、智慧法院 技术负责人",
-        portrait: "/static/portrait2@2x.png"
+        portrait: "./static/portrait2@2x.png"
       },
       {
         name: "郝宇",
         professor: "清华大学 本硕博",
         position:
           "加拿大IDRC与清华合作研发项目@$多项国家自然科学基金项目@$算法负责人",
-        portrait: "/static/portrait3@2x.png"
+        portrait: "./static/portrait3@2x.png"
       },
       {
         name: "代文韬",
         professor: "清华大学计算机系，本硕",
         position:
           "华来智能语义平台 系统架构师@$泰康智能机器人问答、舆情分析系统 技术负责人 ",
-        portrait: "/static/portrait4@2x.png"
+        portrait: "./static/portrait4@2x.png"
       },
       {
         name: "张钹",
         professor: "院士 清华计算机系教授",
         position: "前 智能技术与系统国家重点实验室 主任",
-        portrait: "/static/portrait5@2x.png"
+        portrait: "./static/portrait5@2x.png"
       },
       {
         name: "黄民烈",
         professor: "清华大学计算机系 本硕博 副教授",
         position: "多项国家自然科学基金项目，申请人，主要参与者",
-        portrait: "/static/portrait6@2x.png"
+        portrait: "./static/portrait6@2x.png"
       }
     ]
   };
@@ -87,7 +87,7 @@ class About extends Component {
 
   render() {
     return (
-      <Layout>
+      <Layout title="华来知识 - 关于我们">
         <div className="main">
           <div className="banner">
             <p className="title1">公司简介</p>
@@ -302,17 +302,17 @@ class About extends Component {
             <Partner />
           </div>
           <p className="title3 public_title1">加入我们</p>
-          <div className="card_join">
-            <JoinCard
+          <div className="card_join inner">
+            {/* <JoinCard
               text1="Boss直聘"
-              portrait="/static/boss@2x.png"
+              portrait="./static/boss@2x.png"
               text2="华来BOSS直聘招聘主页"
               buttonName="进入平台"
               url="/"
-            />
+            /> */}
             <JoinCard
               text1="拉钩"
-              portrait="/static/lagou@2x.png"
+              portrait="./static/lagou@2x.png"
               text2="华来拉勾招聘主页"
               buttonName="进入平台"
               url="https://www.lagou.com/gongsi/478108.html"
@@ -330,9 +330,9 @@ class About extends Component {
           }
           .banner {
             width: 100vw;
-            height: 650rem;
-            background: url("/static/banner@2x.png") no-repeat;
-            background-size: 100% 100%;
+            height: 650px;
+            background-image: url("./static/banner.png");
+            background-position: center center;
             overflow: hidden;
           }
           .title1 {
@@ -345,7 +345,7 @@ class About extends Component {
             line-height: 37px;
             margin-left: 50%;
             transform: translateX(-50%);
-            margin-top: 260rem;
+            margin-top: 260px;
           }
           .title2 {
             width: 918px;
@@ -357,7 +357,7 @@ class About extends Component {
             line-height: 26px;
             margin-left: 50%;
             transform: translateX(-50%);
-            margin-top: 6rem;
+            margin-top: 6px;
           }
           .title3 {
             margin-top: 75px;
@@ -501,11 +501,8 @@ class About extends Component {
           }
 
           .card_join {
-            width: 630px;
             display: flex;
-            justify-content: space-between;
-            margin-left: 50%;
-            transform: translateX(-50%);
+            justify-content: center;
             margin-top: 55px;
           }
           .contact_button {

@@ -18,7 +18,7 @@ class Home extends Component {
 
   render() {
     return (
-      <Layout>
+      <Layout title="华来知识">
         {/* 轮播图 */}
         <div className="swiper-container">
           <div className="swiper-wrapper">
@@ -91,7 +91,7 @@ class Home extends Component {
             padding-bottom: 36px;
           }
           .item1 {
-            background-image: url('/static/home-banner1.png');
+            background-image: url('./static/home-banner1.png');
           }
           .item1 p:nth-child(2) {
             font-size: 26px;
@@ -105,7 +105,7 @@ class Home extends Component {
             color: rgba(255, 255, 255, 0.8);
           }
           .item2 {
-            background-image: url('/static/home-banner2.png');
+            background-image: url('./static/home-banner2.png');
           }
           .item2 p {
             font-size: 26px;
@@ -122,7 +122,7 @@ class Home extends Component {
             font-size: 18px;
           }
           .item3 {
-            background-image: url('/static/home-banner3.png');
+            background-image: url('./static/home-banner3.png');
           }
           .item3 p:nth-child(2) {
             font-size: 26px;

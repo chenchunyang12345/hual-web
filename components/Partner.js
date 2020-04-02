@@ -6,7 +6,7 @@ const Item = ({ idx }) => (
         height: 54px;
       }
       .bg${idx} {
-        background-image: url('/static/company/${idx}.png');
+        background-image: url('./static/company/${idx}.png');
         background-size: 100% 100%;
         background-repeat: no-repeat;
       }

@@ -3,7 +3,7 @@ import Plan from '../components/Plan';
 import Ability from '../components/Ability';
 
 const Technology = () => (
-  <Layout>
+  <Layout title="华来知识 - 核心与技术">
     {/* banner部分 */}
     <div className="banner">
       <p>华来面向各类企业建立人工智能驱动的知识体系</p>
@@ -28,7 +28,7 @@ const Technology = () => (
         text-align: center;
         font-weight: 500;
         color: #fff;
-        background-image: url('/static/tec-banner.png');
+        background-image: url('./static/tec-banner.png');
         background-position: center 0;
       }
       .banner p:nth-child(1) {
