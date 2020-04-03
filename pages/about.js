@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Layout from "../layout/layout";
 import TeamCard from "../components/TeamCard";
 import JoinCard from "../components/JoinCard";
-import Partner from '../components/Partner';
+import Partner from "../components/Partner";
 
 /* 关于我们 */
 class About extends Component {
@@ -117,13 +117,11 @@ class About extends Component {
           <div className="honor_content">
             <p className="title5 public_title1">企业荣誉</p>
             <div className="honor_first honor_hover">
-              <div className="honor_left text_piece honor_first_vertical">
-                <p className="honor_text float_right blue">三星</p>
-                <p className="honor_text float_right">
+              <div className="honor_left honor_first_vertical">
+                <p className="honor_text float_right text_piece">
                   情感文本内容识别和计算，实现对象相关内容的情感分布，该专利已被
-                </p>
-                <p className="honor_text float_right">
-                  收购，三星市场部目前正应用该系统分析其产品的用户体验动态变化
+                  <a>三星</a>
+                  收购，三星市场部目前正应用该系统分析其产品的用户体验动态变化。
                   <br />
                   <br />
                   社交媒体问答数据的挖掘和应用能力持续提升，并与各B端客户合作应用到对话系统设计中，例如音乐查询、大众健康问答、餐饮对话等相关领域的查询和问答系统。
@@ -146,24 +144,25 @@ class About extends Component {
                 <div className="circular"></div>
                 <div className="vertical honor_second_vertical"></div>
               </div>
-              <div className="honor_right text_piece honor_second_vertical">
-                <p className="honor_text blue">
-                  ECM情绪化聊天机器人中国问世，被英国卫报报道，国家领导人参观访问
-                </p>
-                <br />
-                <br />
-                <br />
-                <p className="honor_text blue">朱小燕教授</p>
-                <p className="honor_text">带领清华大学搜狗搜索联合战队获得</p>
-                <p className="honor_text blue">
-                  NTCIR13-STC2评测比赛总排名第一名
+              <div className="honor_right honor_second_vertical">
+                <p className="honor_text text_piece float_left">
+                  <a>
+                    ECM情绪化聊天机器人中国问世，被英国卫报报道，国家领导人参观访问
+                  </a>
+                  <br />
+                  <br />
+                  <br />
+                  <a>朱小燕教授</a>
+                  带领清华大学搜狗搜索联合战队获得
+                  <a>NTCIR13-STC2评测比赛总排名第一名</a>
+                  <br />
                 </p>
               </div>
             </div>
 
             <div className="honor_item honor_hover">
-              <div className="honor_left text_piece piece_size_one">
-                <p className="honor_text float_right">
+              <div className="honor_left piece_size_one">
+                <p className="honor_text float_right text_piece">
                   开始垂直领域问答/对话/交互系统研究，完成多个整体系统，并实施部署上线
                 </p>
               </div>
@@ -184,50 +183,28 @@ class About extends Component {
                 <div className="circular"></div>
                 <div className="vertical honor_second_vertical"></div>
               </div>
-              <div className="honor_right text_piece piece_size_one">
-                <p className="honor_text blue">开始知识图谱的研究</p>
+              <div className="honor_right piece_size_one">
+                <p className="honor_text text_piece float_left">
+                  <a>开始知识图谱的研究</a>
+                </p>
               </div>
             </div>
 
             <div className="honor_item honor_hover">
-              <div className="honor_left text_piece honor_first_vertical">
-                <p className="honor_text float_left">
+              <div className="honor_left honor_first_vertical">
+                <p className="honor_text float_right text_piece">
                   获得加拿大政府的国际开发研究中心（IDRC）的
-                </p>
-                <p className="honor_text float_left blue">
-                  首席科学家基金（IRCI）
-                </p>
-                <p className="honor_text float_right">资助的</p>
-                <br />
-                <p className="honor_text">
-                  项目（5+2年，共100+30万加元），同时
-                </p>
-
-                <p className="honor_text float_right blue">
-                  朱小燕本人获得加拿大国际首席科学家
+                  <a>首席科学家基金（IRCI）</a>
+                  资助的项目（5+2年，共100+30万加元），同时
+                  <a>朱小燕本人获得加拿大国际首席科学家称号。</a>
                   <br />
-                  称号。
+                  <br />
+                  开始研究<a>中文开放域无约束问答系统</a>
+                  ，完成趣答系统。该系统后来被科大讯飞收购
+                  <br />
+                  <br />
+                  国际竞赛获得第一
                 </p>
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <p className="honor_text float_right">
-                  ，完成趣答系统。该系统后来被科大讯飞收
-                  <br />购
-                </p>
-                <p className="honor_text float_right">开始研究</p>
-                <p className="honor_text float_right blue">
-                  中文开放域无约束问答系统
-                </p>
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <p className="honor_text float_right">国际竞赛获得第一</p>
               </div>
               <div className="honor_center">
                 <div className="circular"></div>
@@ -246,33 +223,23 @@ class About extends Component {
                 <div className="circular"></div>
                 <div className="vertical honor_second_vertical"></div>
               </div>
-              <div className="honor_right text_piece piece_size_one">
-                <p className="honor_text blue">国际竞赛获得第一</p>
+              <div className="honor_right piece_size_one">
+                <p className="honor_text text_piece float_left">
+                  <a>国际竞赛获得第一</a>
+                </p>
               </div>
             </div>
 
             <div className="honor_item honor_hover">
-              <div className="honor_left text_piece honor_second_vertical">
-                <p className="honor_text float_right">
-                  ，算法曾转让（license）给了美国生物信
+              <div className="honor_left honor_second_vertical">
+                <p className="honor_text float_right text_piece">
+                  <a> 蛋白质名词实体识别国际竞赛第一名</a>
+                  ，算法曾转让（license）给了美国生物信息研究中心NCBI（National
+                  Center for Biotechnology Information）
+                  <br />
+                  <br />
+                  完成基于Google的<a>原型系统QUANTA，达到当时最好水平</a>
                 </p>
-                <p className="honor_text float_right blue">
-                  蛋白质名词实体识别国际竞赛第一名
-                </p>
-                <p className="honor_text float_right">
-                  息研究中心NCBI（National Center for Biotechnology
-                  Information）
-                </p>
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <p className="honor_text float_right blue">
-                  原型系统QUANTA，达到当时最好水平
-                </p>
-                <p className="honor_text float_right">完成基于Google的</p>
               </div>
               <div className="honor_center">
                 <div className="circular"></div>
@@ -290,8 +257,8 @@ class About extends Component {
               <div className="honor_center">
                 <div className="circular"></div>
               </div>
-              <div className="honor_right text_piece piece_size_one">
-                <p className="honor_text blue">
+              <div className="honor_right piece_size_one">
+                <p className="honor_text text_piece float_left">
                   开始研究基于信息距离理论的开放域事实性问答系统
                 </p>
               </div>
@@ -389,33 +356,33 @@ class About extends Component {
           }
           .honor_content {
             width: 100%;
-            height: 1371px;
             background: rgba(193, 193, 193, 0.1);
             margin-top: 46px;
+            padding-bottom: 20px;
             overflow: hidden;
           }
           .honor_first {
-            width: 1188px;
+            width: 1152px;
             display: flex;
             margin-top: 58px;
             margin-left: 50%;
             transform: translateX(-50%);
           }
           .honor_item {
-            width: 1188px;
+            width: 1152px;
             display: flex;
             margin-left: 50%;
             transform: translateX(-50%);
           }
           .honor_left {
-            width: 580px;
+            width: 560px;
           }
           .honor_center {
             width: 16px;
             margin-left: 16px;
           }
           .honor_right {
-            width: 580px;
+            width: 560px;
             margin-left: 16px;
           }
 
@@ -423,19 +390,13 @@ class About extends Component {
             height: 205px;
           }
           .honor_second_vertical {
-            height: 120px;
+            height: 130px;
           }
           .piece_size_one {
             height: 60px;
           }
-          .piece_size_two {
-            height: 60px;
-          }
-          .piece_size_three {
-            height: 60px;
-          }
           .honor_fifth_vertical {
-            height: 192px;
+            height: 210px;
           }
           .circular {
             width: 16px;
@@ -478,12 +439,11 @@ class About extends Component {
             margin-top: 5px;
             cursor: pointer;
           }
-          .blue {
-            color: rgba(19, 65, 164, 1);
-          }
           .text_piece {
-            padding: 0 0px;
+            width: 100%;
+            padding: 0 6px;
             cursor: pointer;
+            padding-bottom: 20px;
           }
           .text_piece_hover {
             background: linear-gradient(
