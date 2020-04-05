@@ -6,7 +6,7 @@ const Footer = () => (
       <div className="introduce">
         <div className="logo"></div>
         <p className="introduce_text">
-          行业领先的AI语音语音技术服务提供商。
+          行业领先的AI语音技术服务提供商。
           <br />
           致力于利用知识图谱、语义理解技术，结合行业数据，
           <br />
@@ -20,7 +20,7 @@ const Footer = () => (
             <a className="subhead">智能语音平台</a>
           </Link>
           <Link href={`${process.env.path.nav2}#t2`}>
-            <a className="subhead">企业知识图片构建</a>
+            <a className="subhead">企业知识图谱构建</a>
           </Link>
           <Link href={`${process.env.path.nav2}#t3`}>
             <a className="subhead">智能对话平台</a>
@@ -91,8 +91,6 @@ const Footer = () => (
         margin-left: 9px;
         margin-top: 26px;
         font-size: 14px;
-        font-family: PingFangSC-Regular, PingFang SC;
-        font-weight: 400;
         color: rgba(255, 255, 255, 0.8);
         line-height: 22px;
       }
@@ -105,8 +103,6 @@ const Footer = () => (
       }
       .headline {
         font-size: 16px;
-        font-family: PingFangSC-Regular, PingFang SC;
-        font-weight: 400;
         color: rgba(255, 255, 255, 1);
         line-height: 22px;
         margin-top: 49px;
@@ -118,8 +114,6 @@ const Footer = () => (
         display: block;
         margin-top: 10px;
         font-size: 14px;
-        font-family: PingFangSC-Regular, PingFang SC;
-        font-weight: 400;
         color: rgba(255, 255, 255, 0.8);
         line-height: 22px;
       }

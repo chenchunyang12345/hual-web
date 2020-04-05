@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Layout from '../layout/layout';
-// import './';
 /* 产品与服务 */
 
 class Product extends Component {
@@ -23,7 +22,7 @@ class Product extends Component {
       <Layout title="华来知识 - 产品与服务">
         <div className="main">
           <div className="jishu">
-            <p className="title1">华来科技</p>
+            <p className="title1">华来知识</p>
             <p className="title2">产品与服务</p>
           </div>
           <div className="container">
@@ -122,13 +121,12 @@ class Product extends Component {
             background-image: url('./static/jishu-bg.png');
             background-position: center center;
             overflow: hidden;
+            font-family: siyuan-medium;
           }
           .title1 {
             width: 163px;
             height: 52px;
             font-size: 40px;
-            font-family: PingFang-SC-Medium, PingFang SC;
-            font-weight: 500;
             color: rgba(255, 255, 255, 1);
             line-height: 56px;
             margin-left: 50%;
@@ -139,9 +137,7 @@ class Product extends Component {
             width: 130px;
             height: 37px;
             font-size: 26px;
-            font-family: PingFang-SC-Medium, PingFang-SC;
-            font-weight: 500;
-            color: rgba(255, 255, 255, 1);
+            color: rgba(255, 255, 255, 0.8);
             line-height: 37px;
             margin-left: 50%;
             transform: translateX(-50%);
@@ -240,20 +236,19 @@ class Product extends Component {
           .public_title1 {
             height: 56rem;
             font-size: 40px;
-            font-weight: 500;
             color: rgba(51, 51, 51, 1);
             line-height: 56rem;
+            font-family: siyuan-medium;
           }
           .public_title2 {
             height: 25rem;
             font-size: 18px;
-            font-weight: 500;
             color: rgba(51, 51, 51, 1);
             line-height: 25rem;
+            font-family: siyuan-medium;
           }
           .public_text1 {
             font-size: 16px;
-            font-weight: 400;
             color: rgba(51, 51, 51, 1);
             line-height: 32rem;
           }

@@ -32,8 +32,6 @@ class JoinCard extends Component {
           .title_text1 {
             width: 100%;
             font-size: 18px;
-            font-family: PingFangSC-Regular, PingFang SC;
-            font-weight: 400;
             color: rgba(51, 51, 51, 1);
             line-height: 25px;
             margin-left: 50%;
@@ -44,8 +42,6 @@ class JoinCard extends Component {
           .title_text2 {
             width: 100%;
             font-size: 16px;
-            font-family: PingFangSC-Regular, PingFang SC;
-            font-weight: 400;
             color: rgba(51, 51, 51, 1);
             line-height: 22px;
             margin-left: 50%;
@@ -69,8 +65,6 @@ class JoinCard extends Component {
             border-radius: 3px;
             border: 1px solid rgba(85, 132, 255, 1);
             font-size: 14px;
-            font-family: PingFang-SC-Regular, PingFang-SC;
-            font-weight: 400;
             color: rgba(0, 67, 207, 1);
             line-height: 30px;
             text-align: center;

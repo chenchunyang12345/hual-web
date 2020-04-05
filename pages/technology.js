@@ -26,10 +26,10 @@ const Technology = () => (
         width: 100%;
         height: 650px;
         text-align: center;
-        font-weight: 500;
         color: #fff;
         background-image: url('./static/tec-banner.png');
         background-position: center 0;
+        font-family: siyuan-medium;
       }
       .banner p:nth-child(1) {
         font-size: 26px;
