@@ -13,42 +13,42 @@ class About extends Component {
         professor: "清华计算机系教授 博导",
         position:
           "智能技术与系统国家重点实验室 主任@$北京市计算机学会 副理事长",
-        portrait: "./static/portrait1@2x.png"
+        portrait: "./static/portrait1@2x.png",
       },
       {
         name: "戴海生",
         professor: "清华大学 本硕博",
         position:
           "前IBM、联想、百度、京东 语音算法科学家@$百度联通智能客服系统、智慧法院 技术负责人",
-        portrait: "./static/portrait2@2x.png"
+        portrait: "./static/portrait2@2x.png",
       },
       {
         name: "郝宇",
         professor: "清华大学 本硕博",
         position:
           "加拿大IDRC与清华合作研发项目@$多项国家自然科学基金项目@$算法负责人",
-        portrait: "./static/portrait3@2x.png"
+        portrait: "./static/portrait3@2x.png",
       },
       {
         name: "代文韬",
         professor: "清华大学计算机系，本硕",
         position:
           "华来智能语义平台 系统架构师@$泰康智能机器人问答、舆情分析系统 技术负责人 ",
-        portrait: "./static/portrait4@2x.png"
+        portrait: "./static/portrait4@2x.png",
       },
       {
         name: "张钹",
         professor: "院士 清华计算机系教授",
         position: "前 智能技术与系统国家重点实验室 主任",
-        portrait: "./static/portrait5@2x.png"
+        portrait: "./static/portrait5@2x.png",
       },
       {
         name: "黄民烈",
         professor: "清华大学计算机系 本硕博 副教授",
         position: "多项国家自然科学基金项目，申请人，主要参与者",
-        portrait: "./static/portrait6@2x.png"
-      }
-    ]
+        portrait: "./static/portrait6@2x.png",
+      },
+    ],
   };
   componentDidMount() {
     let designWidth = 1920;
@@ -62,9 +62,12 @@ class About extends Component {
     window.addEventListener("resize", computeFont);
     // 屏幕朝向发生变化时重新计算fontSize
     window.addEventListener("orientationchange", computeFont);
-    let textPiece = document.querySelectorAll(".text_piece");
+    let textPiece = Array.prototype.slice.call(
+      document.querySelectorAll(".text_piece")
+    );
     let circularHover = document.querySelectorAll(".circular  ");
     let honorTextDate = document.querySelectorAll(".honor_text_date");
+
     textPiece.forEach((item, index) => {
       item.addEventListener("mouseover", () => {
         item.className = item.className + " " + "text_piece_hover";
