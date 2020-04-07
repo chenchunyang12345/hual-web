@@ -1,23 +1,9 @@
-import React, { Component } from 'react';
-import Layout from '../layout/layout';
+import React, { Component } from "react";
+import Layout from "../layout/layout";
 // import './';
 /* 产品与服务 */
 
 class Product extends Component {
-  componentDidMount() {
-    let designWidth = 1920;
-    function computeFont() {
-      // fontsize=视口Width/设计稿Width
-      document.documentElement.style.fontSize =
-      document.documentElement.clientWidth / designWidth + 'px';
-    }
-    computeFont();
-    // 视口大小发生变化时重新计算fontSize
-    window.addEventListener('resize', computeFont);
-    // 屏幕朝向发生变化时重新计算fontSize
-    window.addEventListener('orientationchange', computeFont);
-  }
-
   render() {
     return (
       <Layout title="华来知识 - 产品与服务">
@@ -26,10 +12,10 @@ class Product extends Component {
             <p className="title1">华来科技</p>
             <p className="title2">产品与服务</p>
           </div>
-          <div className="container">
+          <div className="inner">
             <div className="anchor" id="p1"></div>
             <div className="box_first">
-              <div className="float_left">
+              <div className="box_text">
                 <div className="title1_content">
                   <p className="title1_num public_title1">01</p>
                   <div className="title_line"></div>
@@ -51,7 +37,7 @@ class Product extends Component {
             <div className="anchor" id="p2"></div>
             <div className="box_second">
               <div className="second_img"></div>
-              <div className="float_right">
+              <div className="box_text">
                 <div className="title3_content">
                   <div className="title_line"></div>
                   <div className="title1_num public_title1">02</div>
@@ -72,7 +58,7 @@ class Product extends Component {
             </div>
             <div className="anchor" id="p3"></div>
             <div className="box_second">
-              <div className="float_left">
+              <div className="box_text">
                 <div className="title1_content margin_top1">
                   <p className="title1_num public_title1">03</p>
                   <div className="title_line"></div>
@@ -94,7 +80,7 @@ class Product extends Component {
             <div className="anchor" id="p4"></div>
             <div className="box_second">
               <div className="fourth_img"></div>
-              <div className="float_right margin_top2">
+              <div className="box_text">
                 <div className="title3_content">
                   <div className="title_line"></div>
                   <div className="title1_num public_title1">04</div>
@@ -114,12 +100,12 @@ class Product extends Component {
         </div>
         <style jsx>{`
           .main {
-            padding-bottom: 70rem;
+            padding-bottom: 70px;
           }
           .jishu {
             width: 100vw;
             height: 650px;
-            background-image: url('./static/jishu-bg.png');
+            background-image: url("./static/jishu-bg.png");
             background-position: center center;
             overflow: hidden;
           }
@@ -149,22 +135,24 @@ class Product extends Component {
           }
           .box_first {
             overflow: hidden;
-            padding-top: 50rem;
+            padding-top: 60px;
             width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
           }
           .box_second {
             overflow: hidden;
-            padding-top: 40rem;
+            padding-top: 40px;
             width: 100%;
-          }
-          .float_left {
-            float: left;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
           }
           .title1_content {
             display: flex;
             width: 100px;
             align-items: center;
-            margin: 48rem 0 0 397rem;
           }
           .title1_num {
             width: 48px;
@@ -176,15 +164,15 @@ class Product extends Component {
             border-bottom: 3px solid rgba(57, 120, 252, 1);
           }
           .text1_content {
-            width: 550rem;
-            margin: 10rem 0 0 397rem;
+            width: 100%;
+            margin: 10px 0 0 0;
           }
           .text2_content {
-            width: 550rem;
-            margin: 10rem 0 0 0;
+            width: 100%;
+            margin: 10px 0 0 0;
           }
           .title2_content {
-            margin: 20rem 0 0 397rem;
+            margin: 20px 0 0 0;
           }
           .title3_content {
             display: flex;
@@ -193,69 +181,57 @@ class Product extends Component {
             align-items: center;
           }
           .title4_content {
-            margin: 20rem 0 0 0;
+            margin: 20px 0 0 0;
           }
           .first_img {
-            width: 880rem;
-            height: 380rem;
-            background: url('./static/sales-manager-giving-advice-his-260nw-529008256.png')
+            width: 500px;
+            height: 374px;
+            background: url("./static/sales-manager-giving-advice-his-260nw-529008256@2x.png")
               no-repeat;
             background-size: 100% 100%;
-            float: right;
           }
           .second_img {
-            width: 880rem;
-            height: 380rem;
-            background: url('./static/happy-senior-old-family-couple-260nw-1437231725.png')
+            width: 500px;
+            height: 374px;
+            background: url("./static/happy-senior-old-family-couple-260nw-1437231725@2x.png")
               no-repeat;
             background-size: 100% 100%;
-            float: left;
           }
           .third_img {
-            width: 880rem;
-            height: 380rem;
-            background: url('./static/bigbigwork.png') no-repeat;
+            width: 500px;
+            height: 374px;
+            background: url("./static/bigbigwork@2x.png") no-repeat;
             background-size: 100% 100%;
-            float: right;
           }
           .fourth_img {
-            width: 880rem;
-            height: 380rem;
-            background: url('./static/a-man-discussing-a-business-plan-3773837.png')
+            width: 500px;
+            height: 374px;
+            background: url("./static/a-man-discussing-a-business-plan-3773837@2x.png")
               no-repeat;
             background-size: 100% 100%;
-            float: left;
           }
-          .float_right {
-            width: 550rem;
-            float: right;
-            margin: 32rem 330rem 0 0;
-          }
-          .margin_top1 {
-            margin-top: 10rem;
-          }
-          margin_top2 {
-            margin-top: ;
+          .box_text {
+            width: 500px;
           }
           .public_title1 {
-            height: 56rem;
+            height: 56px;
             font-size: 40px;
             font-weight: 500;
             color: rgba(51, 51, 51, 1);
-            line-height: 56rem;
+            line-height: 56px;
           }
           .public_title2 {
-            height: 25rem;
+            height: 25px;
             font-size: 18px;
             font-weight: 500;
             color: rgba(51, 51, 51, 1);
-            line-height: 25rem;
+            line-height: 25px;
           }
           .public_text1 {
             font-size: 16px;
             font-weight: 400;
             color: rgba(51, 51, 51, 1);
-            line-height: 32rem;
+            line-height: 32px;
           }
         `}</style>
       </Layout>
