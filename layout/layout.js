@@ -1,6 +1,6 @@
-import Head from 'next/head';
-import Nav from '../components/Nav';
-import Footer from '../components/Footer';
+import Head from "next/head";
+import Nav from "../components/Nav";
+import Footer from "../components/Footer";
 
 const Layout = ({ children, title = '华来知识' }) => {
 
@@ -9,6 +9,7 @@ const Layout = ({ children, title = '华来知识' }) => {
       <Head>
         <title>{title}</title>
         <meta charSet="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=9"></meta>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <Nav />
