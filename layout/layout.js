@@ -2,7 +2,8 @@ import Head from "next/head";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 
-const Layout = ({ children, title = "华来知识" }) => {
+const Layout = ({ children, title = '华来知识' }) => {
+
   return (
     <div>
       <Head>
@@ -24,8 +25,8 @@ const Layout = ({ children, title = "华来知识" }) => {
         h4 {
           margin: 75px 0 55px;
           text-align: center;
-          font-weight: 500;
           font-size: 20px;
+          font-family: siyuan-medium;
         }
         // 整体卡片hover样式
         .card-hover:hover {

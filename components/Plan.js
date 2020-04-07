@@ -3,20 +3,20 @@ const ITEM_CONTENT = [
   {
     title: '智能语音平台',
     content:
-      '华来智能语义平台通过先进AI算法，对企业提供有效地进行数据管理和分析、可视化图谱构建及对话管理、算法选择和优化、模型训练等服务。',
+      '华来智能语音平台通过先进AI算法，对企业提供有效地进行数据管理和分析、可视化图谱构建及对话管理、算法选择和优化、模型训练等服务。',
     id: 't1'
+  },
+  {
+    title: '企业知识图谱构建',
+    content:
+      '华来企业知识图谱构建服务，提供基于ToB业务场景和特定需求构建企业私有知识图谱，并提供高效的企业级数据应用，全程专业保持企业数据安全。',
+    id: 't2'
   },
   {
     title: '智能对话平台',
     content:
       '华来智能对话平台提供声纹识别、语义理解、对话图谱构建、对话管理和语音合成输出的完整技术服务和企业级应用。',
     id: 't3'
-  },
-  {
-    title: '企业知识图谱构建',
-    content:
-      '华来企业知识图片构建服务，提供基于ToB业务场景和特定需求构建企业私有知识图谱，并提供高效的企业级数据应用，全程专业保持企业数据安全。',
-    id: 't2'
   }
 ];
 
@@ -50,8 +50,8 @@ const PlanItem = ({ idx, detail }) => (
         height: 253px;
       }
       .bg2 img {
-        width: 436px;
-        height: 253px;
+        width: 583px;
+        height: 194px;
       }
       .bg3 {
         background: linear-gradient(
@@ -61,19 +61,19 @@ const PlanItem = ({ idx, detail }) => (
         );
       }
       .bg3 img {
-        width: 583px;
-        height: 194px;
+        width: 436px;
+        height: 253px;
       }
       .plan-item h5 {
         font-size: 18px;
-        font-weight: 500;
         padding: 35px 0 40px;
+        font-family: siyuan-medium;
       }
       .plan-item h5::before {
         content: '';
         width: 0;
         height: 18px;
-        border: 1.5px solid #3978fc;
+        border: 1px solid #3978fc;
         border-radius: 4px;
         margin-right: 12px;
       }

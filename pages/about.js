@@ -293,13 +293,12 @@ class About extends Component {
             background-image: url("./static/banner.png");
             background-position: center center;
             overflow: hidden;
+            font-family: siyuan-medium;
           }
           .title1 {
             width: 104px;
             height: 37px;
             font-size: 26px;
-            font-family: PingFang-SC-Medium, PingFang-SC;
-            font-weight: 500;
             color: rgba(255, 255, 255, 1);
             line-height: 37px;
             margin-left: 50%;
@@ -310,9 +309,7 @@ class About extends Component {
             width: 918px;
             height: 26px;
             font-size: 18px;
-            font-family: PingFangSC-Medium, PingFang SC;
-            font-weight: 500;
-            color: rgba(255, 255, 255, 1);
+            color: rgba(255, 255, 255, 0.8);
             line-height: 26px;
             margin-left: 50%;
             transform: translateX(-50%);
@@ -324,7 +321,6 @@ class About extends Component {
           .title4 {
             width: 1135px;
             font-size: 16px;
-            font-weight: 400;
             color: rgba(51, 51, 51, 1);
             line-height: 32px;
             margin-left: 50%;
@@ -418,14 +414,12 @@ class About extends Component {
 
           .honor_text {
             font-size: 16px;
-            font-weight: 400;
             color: rgba(51, 51, 51, 1);
             line-height: 26px;
             display: inline;
           }
           .honor_text_date {
             font-size: 16px;
-            font-weight: 500;
             color: rgba(102, 102, 102, 1);
             line-height: 16px;
             margin-top: 5px;
@@ -466,8 +460,6 @@ class About extends Component {
             transform: translateX(-50%);
             margin-top: 50px;
             font-size: 16px;
-            font-family: PingFang-SC-Regular, PingFang-SC;
-            font-weight: 400;
             line-height: 42px;
             text-align: center;
             cursor: pointer;
@@ -478,16 +470,20 @@ class About extends Component {
             height: 100%;
             color: rgba(57, 120, 252, 1);
           }
+          .contact_button a:hover {
+            background-color: rgba(85,132,255,1);
+            color: rgba(255, 255, 255, 1);
+          }
           .public_title1 {
             width: 100%;
             height: 28px;
             font-size: 20px;
-            font-weight: 500;
             color: rgba(51, 51, 51, 1);
             line-height: 28px;
             margin-left: 50%;
             transform: translateX(-50%);
             text-align: center;
+            font-family: siyuan-medium;
           }
         `}</style>
       </Layout>

@@ -1,6 +1,5 @@
-import React, { Component } from "react";
-import Layout from "../layout/layout";
-// import './';
+import React, { Component } from 'react';
+import Layout from '../layout/layout';
 /* 产品与服务 */
 
 class Product extends Component {
@@ -9,7 +8,7 @@ class Product extends Component {
       <Layout title="华来知识 - 产品与服务">
         <div className="main">
           <div className="jishu">
-            <p className="title1">华来科技</p>
+            <p className="title1">华来知识</p>
             <p className="title2">产品与服务</p>
           </div>
           <div className="inner">
@@ -108,13 +107,12 @@ class Product extends Component {
             background-image: url("./static/jishu-bg.png");
             background-position: center center;
             overflow: hidden;
+            font-family: siyuan-medium;
           }
           .title1 {
             width: 163px;
             height: 52px;
             font-size: 40px;
-            font-family: PingFang-SC-Medium, PingFang SC;
-            font-weight: 500;
             color: rgba(255, 255, 255, 1);
             line-height: 56px;
             margin-left: 50%;
@@ -125,9 +123,7 @@ class Product extends Component {
             width: 130px;
             height: 37px;
             font-size: 26px;
-            font-family: PingFang-SC-Medium, PingFang-SC;
-            font-weight: 500;
-            color: rgba(255, 255, 255, 1);
+            color: rgba(255, 255, 255, 0.8);
             line-height: 37px;
             margin-left: 50%;
             transform: translateX(-50%);
@@ -186,27 +182,27 @@ class Product extends Component {
           .first_img {
             width: 500px;
             height: 374px;
-            background: url("./static/sales-manager-giving-advice-his-260nw-529008256@2x.png")
+            background: url("./static/sales-manager-giving-advice-his-260nw-529008256.png")
               no-repeat;
             background-size: 100% 100%;
           }
           .second_img {
             width: 500px;
             height: 374px;
-            background: url("./static/happy-senior-old-family-couple-260nw-1437231725@2x.png")
+            background: url("./static/happy-senior-old-family-couple-260nw-1437231725.png")
               no-repeat;
             background-size: 100% 100%;
           }
           .third_img {
             width: 500px;
             height: 374px;
-            background: url("./static/bigbigwork@2x.png") no-repeat;
+            background: url("./static/bigbigwork.png") no-repeat;
             background-size: 100% 100%;
           }
           .fourth_img {
             width: 500px;
             height: 374px;
-            background: url("./static/a-man-discussing-a-business-plan-3773837@2x.png")
+            background: url("./static/a-man-discussing-a-business-plan-3773837.png")
               no-repeat;
             background-size: 100% 100%;
           }
@@ -216,20 +212,19 @@ class Product extends Component {
           .public_title1 {
             height: 56px;
             font-size: 40px;
-            font-weight: 500;
             color: rgba(51, 51, 51, 1);
+            font-family: siyuan-medium;
             line-height: 56px;
           }
           .public_title2 {
             height: 25px;
             font-size: 18px;
-            font-weight: 500;
             color: rgba(51, 51, 51, 1);
+            font-family: siyuan-medium;
             line-height: 25px;
           }
           .public_text1 {
             font-size: 16px;
-            font-weight: 400;
             color: rgba(51, 51, 51, 1);
             line-height: 32px;
           }

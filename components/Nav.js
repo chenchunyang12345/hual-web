@@ -99,9 +99,11 @@ const Nav = () => {
           line-height: 60px;
         }
         nav ul li a:hover {
+          font-family: siyuan-medium;
           border-bottom: ${HOVER_LINE}px solid #3978fc;
         }
         .hover {
+          font-family: siyuan-medium;
           border-bottom: ${HOVER_LINE}px solid #3978fc;
         }
       `}</style>

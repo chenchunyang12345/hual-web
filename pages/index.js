@@ -24,8 +24,8 @@ class Home extends Component {
           <div className="swiper-wrapper">
             <div className="swiper-slide item1">
               <div className="inner">
-                <h3>华来科技</h3>
-                <p>行业领先的AI语音语音技术服务提供商</p>
+                <h3>华来知识</h3>
+                <p>行业领先的AI语音技术服务提供商</p>
                 <p>
                   致力于利用知识图谱、语义理解技术，结合行业数据，打造行业智能生态环境，为企业AI创新赋能。
                 </p>
@@ -33,7 +33,7 @@ class Home extends Component {
             </div>
             <div className="swiper-slide item2">
               <div className="inner">
-                <h3>华来科技</h3>
+                <h3>华来知识</h3>
                 <p>成熟的ToB AI解决方案</p>
                 <ul>
                   <li>智能语义平台</li>
@@ -45,7 +45,7 @@ class Home extends Component {
             </div>
             <div className="swiper-slide item3">
               <div className="inner">
-                <h3>华来科技</h3>
+                <h3>华来知识</h3>
                 <p>扎实技术底蕴，与众多行业一线企业合作</p>
                 <p>
                   为招商银行、泰康人寿、国家电网、谷歌、腾讯、阿里巴巴等数家企业提供技术解决方案
@@ -77,13 +77,12 @@ class Home extends Component {
             width: 100%;
             height: 650px;
             --swiper-theme-color: #fff;
-            font-weight: 500;
-            font-family: PingFangSC-Medium,PingFang SC;
           }
           .swiper-slide {
             width: 100%;
             color: #fff;
             background-position: center center;
+            font-family: siyuan-medium;
           }
           .swiper-slide h3 {
             font-size: 40px;

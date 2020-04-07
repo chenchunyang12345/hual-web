@@ -47,13 +47,12 @@ class TeamCard extends Component {
           }
           .public_text {
             font-size: 16px;
-            font-family: PingFangSC-Medium, PingFang SC;
-            font-weight: 500;
             color: rgba(51, 51, 51, 1);
             line-height: 22px;
             margin-left: 50%;
             transform: translateX(-50%);
             text-align: center;
+            font-family: siyuan-medium; 
           }
           .portrait {
             width: 140px;
@@ -76,7 +75,6 @@ class TeamCard extends Component {
             width: 100%;
             height: 40px;
             font-size: 14px;
-            font-weight: 400;
             color: rgba(51, 51, 51, 1);
             line-height: 20px;
             margin-left: 50%;
