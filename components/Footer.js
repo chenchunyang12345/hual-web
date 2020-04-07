@@ -12,6 +12,7 @@ const Footer = () => (
           <br />
           打造行业智能生态环境，为企业AI创新赋能。
         </p>
+        <a href="http://www.beian.miit.gov.cn" target="_blank" className="beian">京ICP备19007763</a>
       </div>
       <div className="core explain">
         <p className="headline">核心技术</p>
@@ -93,6 +94,13 @@ const Footer = () => (
         font-size: 14px;
         color: rgba(255, 255, 255, 0.8);
         line-height: 22px;
+      }
+      .beian {
+        display: block;
+        margin-left: 9px;
+        margin-top: 10px;
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.8);
       }
       .explain {
         width: 160px;
