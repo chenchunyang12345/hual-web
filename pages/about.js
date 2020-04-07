@@ -51,17 +51,6 @@ class About extends Component {
     ],
   };
   componentDidMount() {
-    let designWidth = 1920;
-    function computeFont() {
-      // fontsize=视口Width/设计稿Width
-      document.documentElement.style.fontSize =
-        document.documentElement.clientWidth / designWidth + "px";
-    }
-    computeFont();
-    // 视口大小发生变化时重新计算fontSize
-    window.addEventListener("resize", computeFont);
-    // 屏幕朝向发生变化时重新计算fontSize
-    window.addEventListener("orientationchange", computeFont);
     let textPiece = Array.prototype.slice.call(
       document.querySelectorAll(".text_piece")
     );
