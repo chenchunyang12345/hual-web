@@ -27,7 +27,7 @@ class Product extends Component {
                   <br />
                   导师点评：优秀销售案例构建知识图谱;逐句AI点评分析,提供标准话术指导
                   <br />
-                  高效&成本低：APP/PC随时联系，极大降低“导师1vs1”培训成本
+                  高效&成本低：APP/PC随时练习，极大降低“导师1vs1”培训成本
                   <br />
                 </p>
               </div>

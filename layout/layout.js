@@ -9,7 +9,7 @@ const Layout = ({ children, title = '华来知识' }) => {
       <Head>
         <title>{title}</title>
         <meta charSet="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=9"></meta>
+        <meta httpEquiv="X-UA-Compatible" content="IE=9"></meta>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <script src="./utils/isMobile.js"></script>
       </Head>
