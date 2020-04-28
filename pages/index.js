@@ -77,6 +77,7 @@ class Home extends Component {
             width: 100%;
             height: 650px;
             --swiper-theme-color: #fff;
+            background-color: #000;
           }
           .swiper-slide {
             width: 100%;

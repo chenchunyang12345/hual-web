@@ -10,7 +10,7 @@ const CONTENT = [
     desc: '为保险行业提供知识化智能化辅助\n降低从业门槛，提高成单率'
   },
   {
-    title: 'ai客服服务方案',
+    title: 'AI客服服务方案',
     desc: '快速响应，高效率，7*24小时在线\n多渠道智能客服'
   },
   {
@@ -47,6 +47,7 @@ const Card = ({ content, idx }) => (
         color: #fff;
         position: relative;
         font-size: 18px;
+        background-color: #000;
       }
       // 图片
       .bg${idx} {

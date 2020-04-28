@@ -28,6 +28,7 @@ const Technology = () => (
         text-align: center;
         color: #fff;
         background-image: url('./static/tec-banner.png');
+        background-color: #000;
         background-position: center 0;
         font-family: siyuan-medium;
       }

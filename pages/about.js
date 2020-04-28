@@ -292,6 +292,7 @@ class About extends Component {
             height: 650px;
             background-image: url("./static/banner.png");
             background-position: center center;
+            background-color: #000;
             overflow: hidden;
             font-family: siyuan-medium;
           }

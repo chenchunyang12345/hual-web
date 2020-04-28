@@ -38,7 +38,7 @@ const Footer = () => (
             <a className="subhead">保险行业知识化解决方案</a>
           </Link>
           <Link href={`${process.env.path.nav3}#p3`}>
-            <a className="subhead">ai客服服务方案</a>
+            <a className="subhead">AI客服服务方案</a>
           </Link>
           <Link href={`${process.env.path.nav3}#p4`}>
             <a className="subhead">EHR</a>
@@ -71,7 +71,8 @@ const Footer = () => (
         width: 100vw;
         height: 312px;
         background-image: url('./static/footer-bg.png'); 
-        background-size: 100% 100%;       
+        background-size: 100% 100%;
+        background-color: #000;       
       }
       .inner {
         display: flex;

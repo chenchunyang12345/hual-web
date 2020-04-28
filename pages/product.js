@@ -106,6 +106,7 @@ class Product extends Component {
             height: 650px;
             background-image: url("./static/jishu-bg.png");
             background-position: center center;
+            background-color: #000;
             overflow: hidden;
             font-family: siyuan-medium;
           }
